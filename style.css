@@ -1,11 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-   
-</body>
-</html>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    width:330px;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    border:5px solid #4facfe;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#333;
+    margin-bottom:10px;
+}
+
+.cargo{
+    color:#4facfe;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+button{
+    background:#4facfe;
+    color:white;
+    border:none;
+    padding:12px 35px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#008cff;
+    transform:scale(1.05);
+}
